@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">HungShop</a>
+      <nav>
+        <a href="products.html">Sản phẩm</a>
+        <a class="active" href="cart.html">Giỏ hàng</a>
+        <a href="checkout.html">Thanh toán</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <div class="page-heading">
+      <div>
+        <p class="eyebrow">Bài 1</p>
+        <h1>Giỏ hàng</h1>
+      </div>
+      <a class="btn btn-secondary" href="products.html">Tiếp tục mua hàng</a>
+    </div>
+
+    <section class="cart-layout">
+      <div id="cart-list" class="cart-list"></div>
+      <aside class="summary">
+        <h2>Tổng kết</h2>
+        <div class="summary-row"><span>Tổng số lượng</span><strong id="total-quantity">0</strong></div>
+        <div class="summary-row"><span>Tổng tiền</span><strong id="total-price">0 ₫</strong></div>
+        <a class="btn full" href="checkout.html">Đến Checkout</a>
+      </aside>
+    </section>
+  </main>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

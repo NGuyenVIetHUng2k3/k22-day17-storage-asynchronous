@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">HungShop</a>
+      <nav>
+        <a href="products.html">Sản phẩm</a>
+        <a href="cart.html">Giỏ hàng</a>
+        <a class="active" href="checkout.html">Thanh toán</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page narrow">
+    <p class="eyebrow">Bài 2</p>
+    <h1>Thông tin thanh toán</h1>
+    <p class="muted">Chỉ dùng thông tin giả để thử nghiệm. Không nhập mật khẩu hoặc thông tin thanh toán.</p>
+
+    <form id="checkout-form" class="form-card">
+      <label>
+        Họ tên
+        <input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="Nguyễn Văn A">
+      </label>
+
+      <label>
+        Số điện thoại
+        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="0901234567">
+      </label>
+
+      <label>
+        Email
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="example@gmail.com">
+      </label>
+
+      <label>
+        Địa chỉ nhận hàng
+        <textarea id="address" name="address" rows="4" placeholder="123 Đường ABC, Quận XYZ, Hà Nội"></textarea>
+      </label>
+
+      <label class="checkbox-label">
+        <input id="remember" type="checkbox">
+        <span>Ghi nhớ thông tin cho lần sau</span>
+      </label>
+
+      <div class="form-actions">
+        <button class="btn" type="submit">Lưu thông tin</button>
+        <button class="btn btn-danger" id="clear-checkout" type="button">Xóa thông tin đã lưu</button>
+      </div>
+
+      <p id="checkout-message" class="message"></p>
+    </form>
+  </main>
+
+  <script src="js/checkout.js"></script>
+</body>
+</html>

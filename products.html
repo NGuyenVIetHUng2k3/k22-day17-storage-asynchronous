@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html">HungShop</a>
+      <nav>
+        <a class="active" href="products.html">Sản phẩm</a>
+        <a href="cart.html">Giỏ hàng</a>
+        <a href="checkout.html">Thanh toán</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <div class="page-heading">
+      <div>
+        <p class="eyebrow">Bài 3</p>
+        <h1>Danh sách sản phẩm</h1>
+      </div>
+      <a class="btn btn-secondary" href="cart.html">Xem giỏ hàng</a>
+    </div>
+
+    <div id="loading" class="status">Đang tải...</div>
+    <div id="error" class="status error hidden"></div>
+    <div id="products" class="product-grid"></div>
+  </main>
+
+  <div id="product-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" data-close-modal>&times;</button>
+      <div id="detail-loading" class="status hidden">Đang tải chi tiết...</div>
+      <div id="product-detail"></div>
+    </section>
+  </div>
+
+  <script src="js/products.js"></script>
+</body>
+</html>
